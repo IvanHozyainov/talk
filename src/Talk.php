@@ -139,7 +139,7 @@ class Talk
      *
      * @return int
      */
-    protected function newConversation($receiverId)
+    public function newConversation($receiverId)
     {
         $conversationId = $this->isConversationExists($receiverId);
         $user = $this->getSerializeUser($this->authUserId, $receiverId);
